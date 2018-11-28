@@ -1,2 +1,2 @@
-# The-Man
-Text Adventure Game
+# web-cyoa
+HTML+CSS_JS Adventure Game
