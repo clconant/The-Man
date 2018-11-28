@@ -15,8 +15,13 @@ function checkAnswers(answer) {  // Function names match story scenes. Replace w
      if (answer == "Walk away") {
         cornerOfTheBuilding();
      } 
-      else if (answer == "Walk to him") {
-        spinInCircle();
+	else if (answer=="Walk To Him") {
+		wildNightmares();
+	}
+    else if (answer == "Call The Police") {
+        walkingToTheBack();
+	}
+	else { gettingDraggedAway();
      }
 }
 
@@ -44,20 +49,20 @@ function walkingToTheBack(){
 	answer = setOptions(choices);
 }
 
-function gettingDraggedAway(){
-	story("The guy out of the middle of nowhere hits you to the ground and while you are dazed he starts to drag you");
-	choices = ["Throw up","Pass out","Grab something from the ground"];
-	answer = setOptions(choices);
-}
+// function gettingDraggedAway(){
+	// story("The guy out of the middle of nowhere hits you to the ground and while you are dazed he starts to drag you");
+	// choices = ["Throw up","Pass out","Grab something from the ground"];
+	// answer = setOptions(choices);
+// }
 
-function runIntoTheForest(){
-	story("You get sketched out from the guy acting strange all of a sudden so you just start running as fast as you can towards the only cover you’ll have to get away from him");
-	choices = ["Trip over a tree root","Go back","Call the police"];
-	answer = setOptions(choices);
-}
+// function runIntoTheForest(){
+	// story("You get sketched out from the guy acting strange all of a sudden so you just start running as fast as you can towards the only cover you’ll have to get away from him");
+	// choices = ["Trip over a tree root","Go back","Call the police"];
+	// answer = setOptions(choices);
+// }
 
-function blackOut(){
-	story("You became so overwhelmed with everything around you that was happening that you get really dizzy and just go numb and can’t remember anything that happened within the last 2 hours");
-	choices = ["Have a nightmare of the man","Go home","Wake up in your bed"];
-	answer = setOptions(choices);
+// function blackOut(){
+	// story("You became so overwhelmed with everything around you that was happening that you get really dizzy and just go numb and can’t remember anything that happened within the last 2 hours");
+	// choices = ["Have a nightmare of the man","Go home","Wake up in your bed"];
+	// answer = setOptions(choices);
 
