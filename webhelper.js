@@ -4,7 +4,7 @@ window.onload = start;
 
 function start() {
     setup();
-    town();
+    theMan();
 }
 
 function story(text) {
