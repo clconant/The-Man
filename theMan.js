@@ -43,9 +43,15 @@ function wildNightmares(){
 	answer = setOptions(choices);
 }
 
-function walkingToTheBack(){
+function walkingAway(){
 	story("The guy starts walking away and you follow him around to the back of the building where there's no cameras or light");
 	choices = ["Run away", "Fight Him", "Call the police"];
+	answer = setOptions(choices);
+}
+
+function gettingDraggedAway(){
+	story("The guy out of the middle of nowhere hits you to the ground and while you are dazed he starts to drag you");
+	choices = ["Throw up","Pass out","Grab something from the ground"];
 	answer = setOptions(choices);
 }
 
