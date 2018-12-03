@@ -25,6 +25,17 @@ function theMan(){
 	answer = setOptions(choices);
 }
 
+function cornerOfTheBuilding(){
+	story("You decide to go talk with the creepy guy that told you to come over to him at midnight while you were walking, he stares you down as you slowly approach towards him and escape the streetlights illumination.");
+	choices = ["Go home", "Run into the forest", "Run into the building"];
+	answer = setOptions(choices);
+}
+
+function policeShowUp(){
+	story("You chose to talk with the guy HOW WISE, you guys have a good 30 minute conversation about your favorite sports teams and the sports you like the best before the cops show up");
+	choices = ["Act like you know the guy", "Wake up from a dream", "Have a nightmare of the man"];
+	answer = setOptions(choices);
+}
 
 
 
