@@ -23,10 +23,11 @@ function checkAnswers(answer) {  // Function names match story scenes. Replace w
 	}
 	else { gettingDraggedAway();
      }
+	 if
 }
 
 function theMan(){
-	story("You are wandering along a sidewalk at midnight in near pitchblack with only streetlights illuminating the path that you have chosen. You have plenty of time that you would want to waste but out of the corner of your eye you see a shadown of a man leaning against a building asking you to go talk with him. What do you want to do?");
+	story("You are wandering along a sidewalk at midnight in near pitch black with only streetlights illuminating the path that you have chosen. You have plenty of time that you would want to waste but out of the corner of your eye you see a shadow of a man leaning against a building asking you to go talk with him. What do you want to do?");
 	choices = ["Walk Away", "Walk to him", "Call the police"];
 	answer = setOptions(choices);
 }
@@ -37,7 +38,7 @@ function cornerOfTheBuilding(){
 	answer = setOptions(choices);
 }
 
-function wildNightmares(){
+function policeShowUp(){
 	story("You chose to talk with the guy HOW WISE you guys have a good 30 minute conversation about your favorite sports teams and the sports you guys like the best");
 	choices = ["Enter now", "Tell mom"];
 	answer = setOptions(choices);
@@ -52,6 +53,18 @@ function walkingAway(){
 function gettingDraggedAway(){
 	story("The guy out of the middle of nowhere hits you to the ground and while you are dazed he starts to drag you");
 	choices = ["Throw up","Pass out","Grab something from the ground"];
+	answer = setOptions(choices);
+}
+
+function runIntoTheForest(){
+	story("You get sketched out from the guy acting strange all of a sudden so you just start running as fast as you can towards the only cover you’ll have to get away from him.");
+	choices = ["Trip over a tree root","Go back","Call the police"];
+	answer = setOptions(choices);
+}
+
+function blackOut(){
+	story("You became so overwhelmed with everything around you that was happening that you get really dizzy and just go numb and can’t remember anything that happened within the last 2 hours.");
+	choices = ["Have a nightmare of the man","Go home","Wake up in your bed"];
 	answer = setOptions(choices);
 }
 
