@@ -36,12 +36,78 @@ function checkAnswers(answer) {  // Function names match story scenes. Replace w
 	else if (answer == "Run into the forest") {
 		 runIntoTheForest();
 	}
-	/*else if (answer == "") {
-		 ();
+	else if (answer == "Act like you know the man") {
+		 cornerOfTheBuilding();
 	}
-	else if (answer == "") {
-		 ();
-	}*/
+	else if (answer == "Wake up from the dream") {
+		 runIntoTheForest();
+	}
+	else if (answer == "Have a nightmare of the man") {
+		discoverTheMan();
+	}
+	else if (answer == "Laugh at him") {
+		blackOut();
+	}
+	else if (answer == "Fight him") {
+		blackOut();
+	}
+	else if (answer == "Wake up") {
+		wakeUpInYourBed();
+	}
+	else if (answer == "Throw up") {
+		runIntoTheForest();
+	}
+	else if (answer == "Pass out") {
+		wakingUpInADumpster();
+	}
+	else if (answer == "Grab something from the ground") {
+		walkingToTheBack();
+	}
+	else if (answer == "Trip over a tree root") {
+		blackOut();
+	}
+	else if (answer == "Go back") {
+		cornerOfTheBuilding();
+	}
+	else if (answer == "Call the police") {
+		walkingToTheBack();
+	}
+	else if (answer == "Have a nightmare of the man") {
+		discoverTheMan();
+	}
+	else if (answer == "Go home")  {
+		gettingDraggedAway();
+	}
+	else if (answer == "Wake up in your bed") {
+		cornerOfTheBuilding();
+	}
+	else if (answer == "Call the police") {
+		policeShowUp();
+	}
+	else if (answer == "Go home") {
+		gettingDraggedAway();
+	}
+	else if (answer == "Search around you") {
+		observeTheArea();
+	}
+	else if (answer == "Wake up") {
+		wakeUpInYourBed();
+	}
+	else if (answer == "Pass out") {
+		wakingUpInADumpster();
+	}
+	else if (answer == "Laugh it away") {
+		blackOut();
+	}
+	else if (answer == "Go back to bed") {
+		discoverTheMan();
+	}
+	else if (answer == "Your mom drags you out of bed") {
+		gettingDraggedAway();
+	}
+	else if (answer == "Run into the nearest forest") {
+		runIntoTheForest();
+	}
 }
 
 
