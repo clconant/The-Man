@@ -12,17 +12,102 @@ var name = null;
 var spin = 0;
 
 function checkAnswers(answer) {  // Function names match story scenes. Replace with your functions
-     if (answer == "Walk away") {
+     if (answer == "Walk Away") {
         cornerOfTheBuilding();
      } 
 	else if (answer=="Walk To Him") {
-		wildNightmares();
+		policeShowUp();
 	}
     else if (answer == "Call The Police") {
         walkingToTheBack();
 	}
-	else { gettingDraggedAway();
-     }
+	else if (answer == "Go home") {
+		 cornerOfTheBuilding();
+	}
+	else if (answer == "Run into the forest") {
+		 runIntoTheForest();
+	}
+	else if (answer == "Run into the building") {
+		 blackOut();
+	}
+	else if (answer == "Act like you know the man") {
+		 discoverTheMan();
+	}
+	else if (answer == "Run into the forest") {
+		 runIntoTheForest();
+	}
+	else if (answer == "Act like you know the man") {
+		 cornerOfTheBuilding();
+	}
+	else if (answer == "Wake up from the dream") {
+		 runIntoTheForest();
+	}
+	else if (answer == "Have a nightmare of the man") {
+		discoverTheMan();
+	}
+	else if (answer == "Laugh at him") {
+		blackOut();
+	}
+	else if (answer == "Fight him") {
+		blackOut();
+	}
+	else if (answer == "Wake up") {
+		wakeUpInYourBed();
+	}
+	else if (answer == "Throw up") {
+		runIntoTheForest();
+	}
+	else if (answer == "Pass out") {
+		wakingUpInADumpster();
+	}
+	else if (answer == "Grab something from the ground") {
+		walkingToTheBack();
+	}
+	else if (answer == "Trip over a tree root") {
+		blackOut();
+	}
+	else if (answer == "Go back") {
+		cornerOfTheBuilding();
+	}
+	else if (answer == "Call the police") {
+		walkingToTheBack();
+	}
+	else if (answer == "Have a nightmare of the man") {
+		discoverTheMan();
+	}
+	else if (answer == "Go home")  {
+		gettingDraggedAway();
+	}
+	else if (answer == "Wake up in your bed") {
+		cornerOfTheBuilding();
+	}
+	else if (answer == "Call the police") {
+		policeShowUp();
+	}
+	else if (answer == "Go home") {
+		gettingDraggedAway();
+	}
+	else if (answer == "Search around you") {
+		observeTheArea();
+	}
+	else if (answer == "Wake up") {
+		wakeUpInYourBed();
+	}
+	else if (answer == "Pass out") {
+		wakingUpInADumpster();
+	}
+	else if (answer == "Laugh it away") {
+		blackOut();
+	}
+	else if (answer == "Go back to bed") {
+		discoverTheMan();
+	}
+	else if (answer == "Your mom drags you out of bed") {
+		gettingDraggedAway();
+	}
+	else if (answer == "Run into the nearest forest") {
+		runIntoTheForest();
+	}
 }
 
 
@@ -34,7 +119,7 @@ function theMan(){
 }
 //Corner Of Building 1.2
 function cornerOfTheBuilding(){
-	story("You decide to go talk with the creepy guy that told you to come over to him at midnight while you were walking, he stares you down as you slowly approach towards him and escape the streetlights illumination.");
+	story("You decide to go talk with the creepy guy since it was on your way home anyways you to go over to him at midnight while you were walking, he stares you down as you slowly approach towards him and escape the streetlights illumination. He starts to act weird as you get closer and closer and you start to feel uncomfortable");
 	choices = ["Go home", "Run into the forest", "Run into the building"];
 	answer = setOptions(choices);
 }
@@ -69,16 +154,22 @@ function blackOut(){
 	choices = ["Have a nightmare of the man","Go home","Wake up in your bed"];
 	answer = setOptions(choices);
 }
-
-function gettingDraggedAway(){
-	story("The guy out of the middle of nowhere hits you to the ground and while you are dazed he starts to drag you");
-	choices = ["Throw up","Pass out","Grab something from the ground"];
+//Waking Up In A Dumpster 1.8
+function wakingUpInADumpster(){
+	story("You wake up in a dumpster randomly and freak out sending you into a panic almost immediately, you find that you’re behind a building with the man standing next to it.");
+	choices = ["Call the police","Go home","Search around you"];
 	answer = setOptions(choices);
 }
-
-function runIntoTheForest(){
-	story("You get sketched out from the guy acting strange all of a sudden so you just start running as fast as you can towards the only cover you’ll have to get away from him");
-	choices = ["Trip over a tree root","Go back","Call the police"];
+//Observe The Area 1.9
+function observeTheArea(){
+	story("You quickly observe the area for any danger close by or anything that would harm you and you see flashing lights in the distant by a dense forest.");
+	choices = ["Wake up","Pass out","Laugh it away"];
+	answer = setOptions(choices);
+}
+//Wake up in your bed
+function wakeUpInYourBed(){
+	story("");
+	choices = ["Go back to bed","Your mom drags you out of bed","Run into the nearest forest"];
 	answer = setOptions(choices);
 }
 
